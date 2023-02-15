@@ -1,0 +1,22 @@
+#page_header {
+    background-color: #ff1a0014;
+    width: 50em;
+    text-align: center;
+    margin: auto;
+    border-radius: 0.5em;
+    padding: 0.03em;
+}
+
+body {
+    background-color: #00ffff2e;
+}
+
+footer {
+    width: 100%;
+    background-color: #0081C9;
+    color: #FFC93C;
+    font-size: 1em;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+}
