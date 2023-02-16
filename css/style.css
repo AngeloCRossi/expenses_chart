@@ -1,14 +1,24 @@
-#page_header {
-    background-color: #ff1a0014;
-    width: 50em;
-    text-align: center;
-    margin: auto;
-    border-radius: 0.5em;
-    padding: 0.03em;
+body {
+    align-items: center;
+    background-color: #00ffff2e;
 }
 
-body {
-    background-color: #00ffff2e;
+#expenses_chart {
+    background-color: hsl(10, 79%, 65%);
+    /* text-align: center; */
+    margin-bottom: 3em;
+    margin-top: 15em;
+    margin-inline: 25em;
+    border-radius: 4px;
+    height: 5em;
+}
+
+#chartBalance {
+    font-size: 1em;
+}
+
+#chartValue {
+    font-size: 1.5em;
 }
 
 footer {

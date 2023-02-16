@@ -1,46 +1,62 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
 
-    
-    <title>Expenses Chart</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+        <script src="js/scripts.js"></script>
 
-  </head>
+        <title>Expenses Chart</title>
+    </head>
+    <body>
+        <main>
+            
+            <div  id="expenses_chart">
+                <p id="chartBalance">My balance</p>
+                <p id="chartValue">$921.48</p>
+            </div>
 
-  <body>
-    <header class="page_header" id="page_header"><h1>Expenses Chart</h1></header>
-    <main>
-      <div id="expenses_header">
-        My balance
-        $921.48
-      </div>      
-      Spending - Last 7 days
+            <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
 
-      mon
-      tue
-      wed
-      thu
-      fri
-      sat
-      sun
+            <script>
+                var xValues = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
+                var yValues = [17.45, 34.91, 52.36, 31.07, 23.39, 43.28, 25.48];
+                var barColors = ["red", "green","blue","orange","brown", "grey", "purple"];
 
-      Total this month
-      $478.33
+                new Chart("myChart", {
+                type: "bar",
+                data: {
+                    labels: xValues,
+                    datasets: [{
+                    backgroundColor: barColors,
+                    data: yValues
+                    }]
+                },
+                options: {
+                    legend: {display: false},
+                    title: {
+                    display: true,
+                    text: "Spending - Last 7 days"
+                    }
+                }
+                });
+            </script>
+        </main>
+    </body>
 
-      +2.4%
-      from last month
-    </main>
-  </body>
+    <footer>
+        <div class="container_footer" id="id_footer">
+            By Angelo Rossi
+            <a href="https://github.com/AngeloCRossi" target="_blank"><img class="logo_contato" src="images/GitHub-Mark.png"></a>
+            <a href="https://www.linkedin.com/in/angelo-rossi-%E0%AE%83/" target="_blank"><img class="logo_contato" src="images/LinkedIn_logo_initials.png"></a>
+        </div>
+    </footer>
 
-  <footer>
-    <div class="container_footer" id="id_footer">
-        By Angelo Rossi
-        <a href="https://github.com/AngeloCRossi" target="_blank"><img class="logo_contato" src="images/GitHub-Mark.png"></a>
-        <a href="https://www.linkedin.com/in/angelo-rossi-%E0%AE%83/" target="_blank"><img class="logo_contato" src="images/LinkedIn_logo_initials.png"></a>
-    </div>
-</footer>
 </html>
+
+
