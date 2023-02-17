@@ -1,6 +1,7 @@
-body {
+#chart_body {
     align-items: center;
     background-color: #00ffff2e;
+    justify-content: space-around;
 }
 
 #expenses_chart {
