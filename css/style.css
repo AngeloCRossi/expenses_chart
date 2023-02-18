@@ -1,17 +1,28 @@
+/* font-family: 'DM Sans', sans-serif; */
+
 #chart_body {
-    align-items: center;
-    background-color: #00ffff2e;
-    justify-content: space-around;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: hsl(33, 100%, 98%);
+
 }
 
-#expenses_chart {
+#chartHeader {
+    display: flex;
+    align-items: center;
     background-color: hsl(10, 79%, 65%);
-    /* text-align: center; */
-    margin-bottom: 3em;
-    margin-top: 15em;
-    margin-inline: 25em;
-    border-radius: 4px;
-    height: 5em;
+    border-radius: 14px;
+    width: 40%;
+    height: 100px;
+    margin: 6rem 0 0 23rem;
+}
+
+#chartTitle {
+    display: block;
+    width: auto;
+    margin-left: 1em;
+    color: white;
 }
 
 #chartBalance {
@@ -20,6 +31,13 @@
 
 #chartValue {
     font-size: 1.5em;
+}
+
+#chartLogo {
+    margin-right: 1em;
+    position: relative;
+    width: 4em;
+    margin-left: auto;
 }
 
 footer {

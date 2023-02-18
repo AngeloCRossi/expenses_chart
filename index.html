@@ -8,6 +8,10 @@
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/style.css">
 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
         <script src="js/scripts.js"></script>
 
@@ -15,13 +19,17 @@
     </head>
     <body id="chart_body">
         <main>
-            
-            <div  id="expenses_chart">
-                <p id="chartBalance">My balance</p>
-                <p id="chartValue">$921.48</p>
-            </div>
+            <section id="chartHeader">
+                <div id="chartTitle">
+                    <p id="chartBalance">My balance</p>
+                    <p id="chartValue">$921.48</p>
+                </div>
+                <img id="chartLogo" src="images/logo.svg" alt="">
+            </section>
 
-            <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+            <section id="chartBars">
+                <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+            </section>
 
             <script>
                 var xValues = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
