@@ -1,11 +1,8 @@
-/* font-family: 'DM Sans', sans-serif; */
-
 #chart_body {
     font-family: 'DM Sans', sans-serif;
     font-size: 18px;
     font-weight: 400;
-    background-color: hsl(33, 100%, 98%);
-
+    background-color: hsl(27, 66%, 92%);
 }
 
 #chartHeader {
@@ -13,9 +10,18 @@
     align-items: center;
     background-color: hsl(10, 79%, 65%);
     border-radius: 14px;
-    width: 40%;
+    width: 35%;
     height: 100px;
-    margin: 6rem 0 0 23rem;
+    margin:auto;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+#chartLogo {
+    margin-right: 1em;
+    position: relative;
+    width: 4em;
+    margin-left: auto;
 }
 
 #chartTitle {
@@ -23,6 +29,19 @@
     width: auto;
     margin-left: 1em;
     color: white;
+}
+
+#intireChart {
+    background-color: white;
+    width: 35%;
+    border-radius: 40.5px;
+    margin: auto;
+    
+}
+
+#chartBars{
+    width: 80%;
+    margin: auto;
 }
 
 #chartBalance {
@@ -34,12 +53,41 @@
     font-size: 1.5em;
 }
 
-#chartLogo {
-    margin-right: 1em;
-    position: relative;
-    width: 4em;
-    margin-left: auto;
+#chartFooter {
+    display: flex;
+    width: 80%;
+    border-top: solid rgb(226, 223, 223) 2px;
+    margin: auto;
+    margin-top: 2em;
+    height: 5em;
+    padding-top: 2em;
 }
+
+#totalMonth {
+    margin-top: 0.2em;
+    margin-left: 1em;
+}
+
+#this_month {
+    font-size: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+#valueMonth {
+    font-size: 1.3em;
+}
+
+#growthMont {
+    margin-top: 0.2em;
+    margin-left: auto;
+    margin-right: 1em;
+}
+
+#lastMonth {
+    font-size: 0.5em;
+    margin-top: 1em;
+}
+
 
 footer {
     width: 100%;
